@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans KR", sans-serif;
+  background: 135deg, #e6f0ff, #ffffff;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 상단 로고 */
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background: 135deg, #e6f0ff, #ffffff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  margin-bottom: 10px;
+}
+
+header img {
+  height: 35px;
+  margin-left: 10px;
+}
+
+/* 메인 */
+main#app {
+  max-width: 1000px;
+  width: 100%;
+  text-align: center;
+}
+
+.question h2 {
+  margin-bottom: 20px;
+}
+
+/* 선택지 스타일 (이미지 + 텍스트) */
+.options {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 12px;
+  padding: 10px;
+  background-color: #f4f4f4;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.option img {
+  width: 400px;        /* 너비 고정 */
+  height: 480px;       /* 높이 고정 */
+  object-fit: cover;   /* 비율 유지 + 넘치는 부분 잘라내기 */
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.option span {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.option:hover {
+  transform: scale(1.05);
+  background-color: #e8e8e8;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* 진행 상태 */
+#progress {
+  width: 100%;
+  max-width: 900px;
+  height: 8px;
+  margin: 20px auto;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+#progress .bar {
+  height: 100%;
+  width: 0%;
+  background-color: #005bac;
+  border-radius: 4px;
+  transition: width 0.3s ease-in-out;
+}
+
+/* 시작하기 버튼 */
+#intro button {
+  display: inline-block;
+  background-color: #005bac; /* 파란색 */
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: 20px;
+}
+
+#intro button:hover {
+  background-color: #004080;
+}
+
+/* 다시하기 버튼 */
+#retryBtn {
+  display: inline-block;
+  background-color: #005bac; /* 파란색 */
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: 20px;
+}
+
+#retryBtn:hover {
+  background-color: #004080;
+}
+
+
+/* 결과 */
+#result {
+  margin-top: 200px;
+}
+
+#intro {
+  margin-top: 200px;
+}

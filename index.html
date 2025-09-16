@@ -1,0 +1,206 @@
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>밸런스 게임: 직업 성향 설문</title>
+
+  <!-- 외부 CSS -->
+  <link rel="stylesheet" href="/new.css" />
+</head>
+
+<header>
+  <img src="baekseok_logo.png" alt="백석대학교 로고" />
+</header>
+
+<body>
+  <main id="app" aria-live="polite">
+    <!-- Intro -->
+    <section id="intro">
+      <h1>밸런스 게임: 직업 성향 설문</h1>
+      <p>두 선택지 중 하나를 고르세요. 마지막에 한 가지 직업 결과가 도출됩니다.</p>
+      <button type="button" data-skip="true">시작하기</button>
+    </section>
+
+    <!-- Q1 (성별: 점수 제외) -->
+    <section id="q1" class="question" aria-labelledby="q1-title">
+      <h2 id="q1-title">1. 당신의 성별은?</h2>
+      <div class="options">
+        <div class="option" data-skip="true" data-gender="male">
+             <span>남</span>
+          <img src="./사진all/20.png" alt="남">
+        </div>
+        <div class="option" data-skip="true" data-gender="female">
+                    <span>여</span>
+          <img src="./사진all/21.png" alt="여">
+        </div>
+      </div>
+    </section>
+
+    <!-- Q2 -->
+    <section id="q2" class="question" aria-labelledby="q2-title" hidden>
+      <h2 id="q2-title">2. 당신은?</h2>
+      <div class="options">
+        <div class="option" data-nurse="1" data-teacher="2" data-crew="5" data-police="4" data-athlete="3">
+              <span>외향적</span>
+          <img src="./사진all/0.jpg" alt="외향적">
+        </div>
+        <div class="option" data-nurse="4" data-teacher="5" data-crew="1" data-police="3" data-athlete="2">
+                    <span>내향적</span>
+          <img src="./사진all/1.jpg" alt="내향적">
+        </div>
+      </div>
+    </section>
+
+    <!-- 동일한 방식으로 Q3 ~ Q11 수정 -->
+    <!-- 예시 -->
+    <section id="q3" class="question" aria-labelledby="q3-title" hidden>
+      <h2 id="q3-title">3. 당신은?</h2>
+      <div class="options">
+        <div class="option" data-nurse="5" data-teacher="4" data-crew="2" data-police="3" data-athlete="1">
+                    <span>계획적</span>
+          <img src="./사진all/2.jpg" alt="계획적">
+        </div>
+        <div class="option" data-nurse="1" data-teacher="3" data-crew="4" data-police="2" data-athlete="5">
+                    <span>즉흥적</span>
+          <img src="./사진all/3.jpg" alt="즉흥적">
+        </div>
+      </div>
+    </section>
+
+    <!-- Q4 -->
+    <section id="q4" class="question" aria-labelledby="q4-title" hidden>
+      <h2 id="q4-title">4. 운동하기 / 책 읽기</h2>
+      <div class="options">
+        <div class="option" data-nurse="2" data-teacher="1" data-crew="3" data-police="4" data-athlete="5">
+                    <span>운동하기</span>
+          <img src="./사진all/4.jpg" alt="운동하기">
+        </div>
+        <div class="option" data-nurse="4" data-teacher="5" data-crew="2" data-police="3" data-athlete="1">
+                    <span>책 읽기</span>
+          <img src="./사진all/5.jpg" alt="책 읽기">
+        </div>
+      </div>
+    </section>
+
+    <!-- Q5 -->
+    <section id="q5" class="question" aria-labelledby="q5-title" hidden>
+      <h2 id="q5-title">5. 쉬는 날에</h2>
+      <div class="options">
+        <div class="option" data-nurse="2" data-teacher="1" data-crew="4" data-police="3" data-athlete="5">
+                    <span>친구와 놀기</span>
+          <img src="./사진all/6.jpg" alt="친구와 놀기">
+        </div>
+        <div class="option" data-nurse="5" data-teacher="4" data-crew="3" data-police="2" data-athlete="1">
+                    <span>집에서 쉬기</span>
+          <img src="./사진all/7.jpg" alt="집에서 쉬기">
+        </div>
+      </div>
+    </section>
+
+    <!-- Q6 -->
+    <section id="q6" class="question" aria-labelledby="q6-title" hidden>
+      <h2 id="q6-title">6. 보통 당신은?</h2>
+      <div class="options">
+        <div class="option" data-nurse="1" data-teacher="2" data-crew="5" data-police="4" data-athlete="3">
+                    <span>말하는 편</span>
+          <img src="./사진all/8.jpg" alt="말하는 편">
+        </div>
+        <div class="option" data-nurse="5" data-teacher="4" data-crew="1" data-police="3" data-athlete="2">
+                    <span>듣는 편</span>
+          <img src="./사진all/9.jpg" alt="듣는 편">
+        </div>
+      </div>
+    </section>
+
+    <!-- Q7 -->
+    <section id="q7" class="question" aria-labelledby="q7-title" hidden>
+      <h2 id="q7-title">7. 친구가 고민을 말한다면?</h2>
+      <div class="options">
+        <div class="option" data-nurse="3" data-teacher="5" data-crew="4" data-police="2" data-athlete="1">
+                    <span>공감</span>
+          <img src="./사진all/10.jpg" alt="공감">
+        </div>
+        <div class="option" data-nurse="3" data-teacher="1" data-crew="2" data-police="4" data-athlete="5">
+                    <span>조언</span>
+          <img src="./사진all/11.jpg" alt="조언">
+        </div>
+      </div>
+    </section>
+
+    <!-- Q8 -->
+    <section id="q8" class="question" aria-labelledby="q8-title" hidden>
+      <h2 id="q8-title">8. 새로운 사람이 나타났다. 당신은?</h2>
+      <div class="options">
+        <div class="option" data-nurse="5" data-teacher="4" data-crew="2" data-police="3" data-athlete="1">
+                    <span>조용히 도와주는 편</span>
+          <img src="./사진all/12.jpg" alt="조용히 도와주는 편">
+        </div>
+        <div class="option" data-nurse="1" data-teacher="2" data-crew="5" data-police="3" data-athlete="4">
+                    <span>활발하게 이끄는 편</span>
+          <img src="./사진all/13.png" alt="활발하게 이끄는 편">
+        </div>
+      </div>
+    </section>
+
+    <!-- Q9 -->
+    <section id="q9" class="question" aria-labelledby="q9-title" hidden>
+      <h2 id="q9-title">9. 위기 상황에서 당신은?</h2>
+      <div class="options">
+        <div class="option" data-nurse="1" data-teacher="3" data-crew="2" data-police="5" data-athlete="4">
+                    <span>침착하다</span>
+          <img src="./사진all/14.png" alt="침착하다">
+        </div>
+        <div class="option" data-nurse="5" data-teacher="3" data-crew="4" data-police="1" data-athlete="2">
+                    <span>남을 먼저 돌본다</span>
+          <img src="./사진all/15.png" alt="남을 먼저 돌본다">
+        </div>
+      </div>
+    </section>
+
+    <!-- Q10 -->
+    <section id="q10" class="question" aria-labelledby="q10-title" hidden>
+      <h2 id="q10-title">10. 뭐가 더 중요한가?</h2>
+      <div class="options">
+        <div class="option" data-nurse="4" data-teacher="3" data-crew="1" data-police="5" data-athlete="2">
+                    <span>규칙</span>
+          <img src="./사진all/16.jpg" alt="규칙">
+        </div>
+        <div class="option" data-nurse="2" data-teacher="3" data-crew="5" data-police="1" data-athlete="4">
+                    <span>자유</span>
+          <img src="./사진all/17.jpg" alt="자유">
+        </div>
+      </div>
+    </section>
+
+    <!-- Q11 -->
+    <section id="q11" class="question" aria-labelledby="q11-title" hidden>
+      <h2 id="q11-title">11. 당신은?</h2>
+      <div class="options">
+        <div class="option" data-nurse="4" data-teacher="5" data-crew="1" data-police="2" data-athlete="3">
+                    <span>결과보다 과정</span>
+          <img src="./사진all/18.jpg" alt="결과보다 과정">
+        </div>
+        <div class="option" data-nurse="2" data-teacher="1" data-crew="4" data-police="5" data-athlete="3">
+                    <span>과정보다 결과</span>
+          <img src="./사진all/19.jpg" alt="과정보다 결과">
+        </div>
+      </div>
+    </section>
+
+    <!-- 결과 화면 -->
+    <section id="result" role="region" aria-label="설문 결과" hidden>
+      <h1 id="result-title"></h1>
+      <p id="result-desc"></p>
+      <p id="result-scores"></p>
+      <div class="actions">
+        <button type="button" id="retryBtn">다시 하기</button>
+      </div>
+    </section>
+
+    <div id="progress" role="status" aria-atomic="true"></div>
+  </main>
+
+  <!— 외부 JS —>
+  <script defer src="/new.js"></script>
+</body>
+</html>
