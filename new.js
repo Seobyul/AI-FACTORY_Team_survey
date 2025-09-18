@@ -2,11 +2,11 @@ const JOB_KEYS = ['nurse','teacher','crew','police','athlete'];
 const PRIORITY  = ['nurse','teacher','crew','police','athlete'];
 
 const JOB_INFO = {
-  nurse:   { label: '간호사',   desc: '배려·공감, 꼼꼼함과 인내심을 중시하는 유형.' },
-  teacher: { label: '선생님',   desc: '설명·코칭, 협력과 관계 형성을 즐기는 유형.' },
-  crew:    { label: '승무원',   desc: '대인 서비스와 적응력이 뛰어난 글로벌 지향 유형.' },
-  police:  { label: '경찰',     desc: '규칙과 정의감을 중시하며 위기 대처에 강한 유형.' },
-  athlete: { label: '운동선수', desc: '체력·도전, 경쟁과 성과를 즐기는 유형.' }
+  nurse:   { label: '간호사',   desc: '배려·공감, 꼼꼼함과 인내심을 중시하는 유형.', img: './사진all/nurse.png' },
+  teacher: { label: '선생님',   desc: '설명·코칭, 협력과 관계 형성을 즐기는 유형.', img: './사진all/teacher.png' },
+  crew:    { label: '승무원',   desc: '대인 서비스와 적응력이 뛰어난 글로벌 지향 유형.', img: './사진all/crew.png' },
+  police:  { label: '경찰',     desc: '규칙과 정의감을 중시하며 위기 대처에 강한 유형.', img: './사진all/policeman.png' },
+  athlete: { label: '운동선수', desc: '체력·도전, 경쟁과 성과를 즐기는 유형.', img: './사진all/taekwondo.png' }
 };
 
 
@@ -139,3 +139,4 @@ sections.forEach((sec, n)=>{
 });
 
 retryBtn.addEventListener('click', resetAll);
+
