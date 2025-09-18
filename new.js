@@ -114,6 +114,7 @@ function finalize(){
   const key = candidates[0];
   const info = JOB_INFO[key];
 
+   resultImg.src = info.img;
   resultTitle.textContent = `추천 직업: ${info.label}`;
   resultDesc.textContent  = info.desc;
 
@@ -140,5 +141,6 @@ sections.forEach((sec, n)=>{
 });
 
 retryBtn.addEventListener('click', resetAll);
+
 
 
