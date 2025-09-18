@@ -23,6 +23,7 @@ const resultTitle  = document.getElementById('result-title');
 const resultDesc   = document.getElementById('result-desc');
 const resultScores = document.getElementById('result-scores');
 const retryBtn     = document.getElementById('retryBtn');
+const resultImg = document.getElementById('result-img');
 
 const introSection = document.getElementById('intro');
 const startBtn = introSection.querySelector('button[data-skip="true"]');
@@ -139,4 +140,5 @@ sections.forEach((sec, n)=>{
 });
 
 retryBtn.addEventListener('click', resetAll);
+
 
