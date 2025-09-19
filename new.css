@@ -95,6 +95,16 @@ main#app {
   border-radius: 4px;
   transition: width 0.3s ease-in-out;
 }
+/* 결과 화면 이미지 */
+#result-img {
+  max-width: 250px;  /* 최대 너비 250px */
+  width: 80%;        /* 화면 크기에 따라 자동 조절 */
+  height: auto;      /* 비율 유지 */
+  display: block;
+  margin: 20px auto; /* 중앙 정렬 */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* 살짝 그림자 */
+}
 
 /* 시작하기 버튼 */
 #intro button {
@@ -142,4 +152,5 @@ main#app {
 
 #intro {
   margin-top: 200px;
+
 }
